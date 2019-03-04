@@ -12764,7 +12764,8 @@ Some cells even express multiple subtype signatures.</p>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kn">library</span><span class="p">(</span>Seurat<span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="kp">setwd</span><span class="p">(</span><span class="s">&quot;/home/ubuntu/singlecell&quot;</span><span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>Seurat<span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12777,7 +12778,7 @@ Some cells even express multiple subtype signatures.</p>
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">list.files</span><span class="p">(</span><span class="s">&quot;data/filtered_gene_bc_matrices//hg19&quot;</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="kp">list.files</span><span class="p">(</span><span class="s">&quot;dataset-inclass/filtered_gene_bc_matrices/hg19&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12814,7 +12815,7 @@ Some cells even express multiple subtype signatures.</p>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>pbmc.data <span class="o">&lt;-</span> Read10X<span class="p">(</span>data.dir <span class="o">=</span> <span class="s">&quot;data/filtered_gene_bc_matrices/hg19/&quot;</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span>pbmc.data <span class="o">&lt;-</span> Read10X<span class="p">(</span>data.dir <span class="o">=</span> <span class="s">&quot;dataset-inclass/filtered_gene_bc_matrices/hg19/&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
