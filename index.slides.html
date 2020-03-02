@@ -12235,6 +12235,7 @@ Some cells even express multiple subtype signatures.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Gel beads contain reagents for creation of cDNA.</p>
 <p>Major challenge: conquering double-Poisson loading of droplets.</p>
+<p>Solution: severely limit the number of cells versus reagents.  Leads to fewer "multiplets" but a lot of empty droplets and wasted reagents.</p>
 
 </div>
 </div>
@@ -12306,7 +12307,8 @@ Some cells even express multiple subtype signatures.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="During-sequencing,-paired-end-reads-are-used-to-capture-these-barcodes-and-the-mRNA-transcript">During sequencing, paired end reads are used to capture these barcodes and the mRNA transcript<a class="anchor-link" href="#During-sequencing,-paired-end-reads-are-used-to-capture-these-barcodes-and-the-mRNA-transcript">&#182;</a></h1>
+<h1 id="During-sequencing,-paired-end-reads-are-used-to-capture-these-barcodes-and-the-mRNA-transcript">During sequencing, paired end reads are used to capture these barcodes and the mRNA transcript<a class="anchor-link" href="#During-sequencing,-paired-end-reads-are-used-to-capture-these-barcodes-and-the-mRNA-transcript">&#182;</a></h1><p>Sequencing with asymmetric paired-end reads. 1 short technical read, 1 longer biological read.</p>
+
 </div>
 </div>
 </div><div class="fragment">
@@ -12348,6 +12350,8 @@ Some cells even express multiple subtype signatures.</p>
 <li><a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger">CellRanger</a></li>
 <li><a href="https://github.com/broadinstitute/Drop-seq/releases">DropSeqTools</a></li>
 <li><a href="https://salmon.readthedocs.io/en/latest/alevin.html">Salmon Alevin</a></li>
+<li><a href="https://www.kallistobus.tools/">Kallisto Bustools</a></li>
+<li><a href="https://github.com/alexdobin/STAR/blob/master/docs/STARsolo.md">STARsolo</a></li>
 </ul>
 
 </div>
@@ -12375,7 +12379,16 @@ Some cells even express multiple subtype signatures.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Distinguishing-cell-from-barcodes">Distinguishing cell from barcodes<a class="anchor-link" href="#Distinguishing-cell-from-barcodes">&#182;</a></h1><p><img src="img/summary-stats.png" width="80%"></p>
+<h1 id="Distinguishing-cell-from-barcodes">Distinguishing cell from barcodes<a class="anchor-link" href="#Distinguishing-cell-from-barcodes">&#182;</a></h1><p><img src="img/rank-plots" width="60%"/></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Common-cell-calling-distribution">Common cell-calling distribution<a class="anchor-link" href="#Common-cell-calling-distribution">&#182;</a></h1><p><img src="img/summary-stats.png" width="80%"></p>
 
 </div>
 </div>
@@ -12831,7 +12844,27 @@ Some cells even express multiple subtype signatures.</p>
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This isn't single cell resolution though, only ~45$\mu m$.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Allows-you-to-spatially-orient-your-transcriptomic-data,-albeit-at-multi-single-cell-resolution">Allows you to spatially orient your transcriptomic data, albeit at multi-single-cell resolution<a class="anchor-link" href="#Allows-you-to-spatially-orient-your-transcriptomic-data,-albeit-at-multi-single-cell-resolution">&#182;</a></h1><div style="display: block">
+<img src="img/spatial-loupe1.png" width="50%" style="float: left">
+<img src="img/spatial-loupe2.png" width="50%" style="float: right">
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12894,7 +12927,7 @@ Some cells even express multiple subtype signatures.</p>
 <ul>
 <li>Peak calling depends on "bulk"ifying the data.  What happens to peaks specific to rare populations?</li>
 <li>How do we confidently associate peaks with genes, promoters, and transcription factors?</li>
-<li>Tecnical challenges, like proper normalization, etc.</li>
+<li>Read-out is a percentage, not a count, which leads to tecnical challenges, like proper normalization, dimensionality reduction, etc.</li>
 </ul>
 
 </div>
