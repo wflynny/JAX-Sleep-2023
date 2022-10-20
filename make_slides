@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-jupyter nbconvert --to slides index.ipynb --reveal-prefix=reveal.js \
-  --SlidesExporter.reveal_theme=serif \
-  --SlidesExporter.reveal_scroll=True \
+#jupyter nbconvert --to slides index.ipynb --reveal-prefix="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0" \
+jupyter nbconvert --to slides index.ipynb --reveal-prefix="reveal.js" \
+  --SlidesExporter.reveal_theme=simple \
+  --SlidesExporter.reveal_scroll=False \
   --SlidesExporter.reveal_transition=none \
