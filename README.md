@@ -22,3 +22,6 @@ Find the slides live at:
 [wflynny.github.io/JAX-Sleep-AD-2020/](https://wflynny.github.io/JAX-Sleep-AD-2020/index.slides.html)
 
 or locally by opening `slides.html` or `index.slides.html`.
+
+If you want to print the slides, you can visit [this page](https://wflynny.github.io/JAX-Sleep-AD-2020/?print-pdf)
+
