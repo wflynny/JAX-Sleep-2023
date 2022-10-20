@@ -53,7 +53,7 @@ python -m pip install pybiomart
 
 Find the slides live at:
 
-[wflynny.github.io/JAX-Sleep-AD-2020/](https://wflynny.github.io/JAX-Sleep-AD-2020/index.slides.html)
+[wflynny.github.io/JAX-Sleep-AD-2020/](https://wflynny.github.io/JAX-Sleep-AD-2020)
 
 or locally by opening `slides.html` or `index.slides.html`.
 
