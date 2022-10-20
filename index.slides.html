@@ -14671,11 +14671,15 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Workshop-Goals">Workshop Goals<a class="anchor-link" href="#Workshop-Goals">&#182;</a></h2><ol>
-<li>Understand the technologies and analysis methods available in the single cell field to critically examine publications.</li>
+<li>Understand the technologies and analysis methods available in the single cell field to critically examine publications, start your own analysis, etc.</li>
 <li>Understand the <strong>challenges</strong> these methods face.  A good review: <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1926-6">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1926-6</a></li>
 <li>For single cell RNA sequencing:<ul>
 <li>Understand the analysis decisions and common pitfalls involved with typical experiments</li>
 <li>Know where to start and what tools are available if you are faced with analysis of this data.</li>
+</ul>
+</li>
+<li>For spatial experiments:<ul>
+<li>Get excited about the future!</li>
 </ul>
 </li>
 </ol>
@@ -14691,13 +14695,14 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Workshop-Structure">Workshop Structure<a class="anchor-link" href="#Workshop-Structure">&#182;</a></h2><ol>
-<li>History lesson</li>
-<li>Overview of Single cell RNA-sequencing</li>
-<li>Current technologies</li>
-<li>Analysis workshop</li>
-<li>Other single cell technologies</li>
+<li>Motivating the case for single cell transcriptomics</li>
+<li>Concepts needed for single cell RNA-sequencing</li>
+<li>Current dissociative technologies</li>
+<li>Bringing in spatial</li>
+<li>Analysis overview</li>
+<li>Interactive sessions with Scanpy</li>
 </ol>
-<p>Slides available at: <a href="https://wflynny.github.io/MEDS6498-2020/">https://wflynny.github.io/MEDS6498-2020/</a></p>
+<p>Slides available at: <a href="https://wflynny.github.io/JAX-Sleep-AD-2022">https://wflynny.github.io/JAX-Sleep-AD-2022</a></p>
 
 </div>
 </div>
@@ -14837,6 +14842,18 @@ Theodor Schwann (1810--1882)</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Then-graduated-to-flow-cytometry">Then graduated to flow cytometry<a class="anchor-link" href="#Then-graduated-to-flow-cytometry">&#182;</a></h2><img src="img/flow-cytometry.png" width="60%"/>
 <p>Available since the 1970s.  Currently 28 fluorescent probes or 40 mass spectrometry-based probes available.</p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<img src="img/berries.png">
 
 </div>
 </div>
@@ -14991,6 +15008,47 @@ Some cells even express multiple subtype signatures.</p>
 </div>
 </div>
 </div>
+</div></section><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="That-said,-bulk-is-not-inferior-to-scRNA-seq">That said, bulk is not inferior to scRNA-seq<a class="anchor-link" href="#That-said,-bulk-is-not-inferior-to-scRNA-seq">&#182;</a></h2><ul>
+<li>It's at least 5x the cost of RNA-seq per sample</li>
+<li>Can be overkill for homogeneous samples</li>
+<li>Sensitivity is frankly just lower</li>
+<li>Full-length scRNA-seq is still fairly low-throughput <em>or</em> highly manual to do in large quantities</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="I'd-argue-we-should-see-bulk-in-addition-to-single-cell-for-most-studies">I'd argue we should see bulk <em>in addition to</em> single cell for most studies<a class="anchor-link" href="#I'd-argue-we-should-see-bulk-in-addition-to-single-cell-for-most-studies">&#182;</a></h3><img src="img/endo1.png">
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="I'd-argue-we-should-see-bulk-in-addition-to-single-cell-for-most-studies">I'd argue we should see bulk <em>in addition to</em> single cell for most studies<a class="anchor-link" href="#I'd-argue-we-should-see-bulk-in-addition-to-single-cell-for-most-studies">&#182;</a></h3><img src="img/endo2.png">
+
+</div>
+</div>
+</div>
 </div></section></section><section ><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15015,6 +15073,46 @@ Some cells even express multiple subtype signatures.</p>
 </div>
 </div>
 </div></section><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="The-zeroth-step-is-optimizing-tissue-dissociation,-nuclei-isolation,-and-sample-handling">The zeroth step is optimizing tissue dissociation, nuclei isolation, and sample handling<a class="anchor-link" href="#The-zeroth-step-is-optimizing-tissue-dissociation,-nuclei-isolation,-and-sample-handling">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="fragment" >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Controling Rnases</li>
+<li>Controling temperature (some tissues and cell types <em>do not</em> do well on ice</li>
+<li>Reproducibility of tissue digestion, cell lysis, etc.</li>
+<li>Moving <em>quickly</em>!</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></div><div class="fragment" >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<img src="img/nuclei-quality.png">
+
+</div>
+</div>
+</div>
+</div></div></section><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15103,28 +15201,7 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 </div>
 </div>
-</div><div class="fragment" >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Gel bead in Emulsion (GEM)</li>
-<li>High GEM fill ratio (~90% of droplets contain beads)</li>
-<li>Poisson Loading of Cells in GEMs</li>
-<li>Beads dissolve for efficient, liquid phase biochemistry</li>
-<li>Cell lysis starts immediately following encapsulation</li>
-<li>Up to 8 channels/samples processed in parallel</li>
-<li>Up to 6,000 cells/channel, 48,000 cells/chip</li>
-<li>~50% cell processing efficiency</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></div></section><section >
+</div></section><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15772,7 +15849,7 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Some-things-we-didn't-cover-(yet):">Some things we didn't cover (yet):<a class="anchor-link" href="#Some-things-we-didn't-cover-(yet):">&#182;</a></h1><ul>
+<h2 id="Some-things-we-didn't-cover-(yet):">Some things we didn't cover (yet):<a class="anchor-link" href="#Some-things-we-didn't-cover-(yet):">&#182;</a></h2><ul>
 <li>Dataset merging/integration techniques:  <a href="https://github.com/immunogenomics/harmony">Harmony</a>, <a href="https://www.nature.com/articles/nbt.4096">CCA</a>, <a href="https://www.nature.com/articles/nbt.4091">MMN</a></li>
 <li>Pseudotime analysis: inferring temporal ordering to multiple samples. <a href="https://github.com/dynverse/dynbenchmark">75(!) methods</a></li>
 <li>Spliced vs unspliced RNA analysis: <a href="https://scvelo.readthedocs.io/en/latest/">RNA velocity</a> and <a href="http://velocyto.org/velocyto.py/index.html">velocyto</a></li>
@@ -15790,7 +15867,7 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Where-did-the-spatial-information-go?">Where did the spatial information go?<a class="anchor-link" href="#Where-did-the-spatial-information-go?">&#182;</a></h1>
+<h2 id="Where-did-the-spatial-information-go?">Where did the spatial information go?<a class="anchor-link" href="#Where-did-the-spatial-information-go?">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15814,31 +15891,24 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This information is valuable when you want to understand cellular <strong>interactions</strong>.</p>
-<p>For example, studying the immune system interacting with different disease states, organism and embryo development</p>
+<p>For example, studying:</p>
+<ul>
+<li>the anatomical compartmentalization of cell types in highly organized structures (e.g. the brain)</li>
+<li>the immune system infiltrating with different disease states</li>
+<li>organism and embryo development</li>
+</ul>
 
 </div>
 </div>
 </div>
-</div></div></section><section >
+</div></div></section></section><section ><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Imaging-mass-cytometry">Imaging mass cytometry<a class="anchor-link" href="#Imaging-mass-cytometry">&#182;</a></h1><img src="img/imc.png" width="70%">
-
-</div>
-</div>
-</div>
-</div></section><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Lanthanide-series">Lanthanide series<a class="anchor-link" href="#Lanthanide-series">&#182;</a></h1><img src="img/lanthanides.jpg" width="60%">
+<h2 id="Imaging-mass-cytometry">Imaging mass cytometry<a class="anchor-link" href="#Imaging-mass-cytometry">&#182;</a></h2><img src="img/imc.png" width="70%">
 
 </div>
 </div>
@@ -15850,7 +15920,19 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Very-discrete-atomic-spectra">Very discrete atomic spectra<a class="anchor-link" href="#Very-discrete-atomic-spectra">&#182;</a></h1><img src="img/cyto-300x203.png" width="50%">
+<h2 id="Lanthanide-series-metals">Lanthanide series metals<a class="anchor-link" href="#Lanthanide-series-metals">&#182;</a></h2><img src="img/lanthanides.jpg" width="60%">
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Very-discrete-atomic-spectra">Very discrete atomic spectra<a class="anchor-link" href="#Very-discrete-atomic-spectra">&#182;</a></h2><img src="img/cyto-300x203.png" width="50%">
 
 </div>
 </div>
@@ -15879,7 +15961,7 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 </div>
 </div>
-</div></section><section >
+</div></section></section><section ><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15921,7 +16003,7 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Allows-you-to-spatially-orient-your-transcriptomic-data,-albeit-at-multi-single-cell-resolution">Allows you to spatially orient your transcriptomic data, albeit at multi-single-cell resolution<a class="anchor-link" href="#Allows-you-to-spatially-orient-your-transcriptomic-data,-albeit-at-multi-single-cell-resolution">&#182;</a></h1><div style="display: block">
+<h2 id="Allows-you-to-spatially-orient-your-transcriptomic-data,-albeit-at-multi-single-cell-resolution">Allows you to spatially orient your transcriptomic data, albeit at multi-single-cell resolution<a class="anchor-link" href="#Allows-you-to-spatially-orient-your-transcriptomic-data,-albeit-at-multi-single-cell-resolution">&#182;</a></h2><div style="display: block">
 <img src="img/spatial-loupe1.png" width="50%" style="float: left">
 <img src="img/spatial-loupe2.png" width="50%" style="float: right">
 </div>
@@ -15936,7 +16018,18 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Going-even-deeper">Going even deeper<a class="anchor-link" href="#Going-even-deeper">&#182;</a></h1><h2 id="Multiplexed-FISH">Multiplexed FISH<a class="anchor-link" href="#Multiplexed-FISH">&#182;</a></h2><p>Originally starting with smFISH.</p>
+<h2 id="Trading-number-of-features-for-increased-resolution">Trading number of features for increased resolution<a class="anchor-link" href="#Trading-number-of-features-for-increased-resolution">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="fragment" >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Multiplexed-FISH">Multiplexed FISH<a class="anchor-link" href="#Multiplexed-FISH">&#182;</a></h2><p>Originally starting with smFISH.</p>
 <ul>
 <li>Short DNA probes (~20-mers)</li>
 <li>Complementary sequence to mRNA target of interest</li>
@@ -15947,7 +16040,7 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 </div>
 </div>
-</div></section><section >
+</div></div></section><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16114,22 +16207,6 @@ _adapted from [Svensson, Vento-Tormo, & Teichmann 2018 Nature Protocols](https:/
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div></div></section></section>
 </div>
 </div>
