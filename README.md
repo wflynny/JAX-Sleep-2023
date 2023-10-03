@@ -1,8 +1,7 @@
-# JAX Sleep AD Workshop, 2022
+# JAX Sleep Workshop, 2023
 
 This repo accompanies the Single Cell and Spatial Analysis workshop for the JAX
-_Impacts of Sleep and Circadian Biology on Alzheimer’s Disease and Aging_
-course in October 2022.
+_Impacts of Sleep and Circadian Biology_ course in October 2023.
 
 ## How to Use
 
@@ -13,7 +12,7 @@ notebooks, type (or copy-paste) the following into an Anaconda powershell prompt
 cd C:\Users\protwiz\Documents\singlecell-spatial
 conda activate sc-spatial
 git init
-git remote add origin https://github.com/wflynny/JAX-Sleep-AD-2020.git
+git remote add origin https://github.com/wflynny/JAX-Sleep-2023.git
 git pull origin gh-pages
 ```
 
@@ -25,7 +24,7 @@ the start menu). Once it opens in your browser:
 ```
 cd singlecell-spatial
 git init
-git remote add origin https://github.com/wflynny/JAX-Sleep-AD-2020.git
+git remote add origin https://github.com/wflynny/JAX-Sleep-2023.git
 git pull origin gh-pages
 ```
 
@@ -53,10 +52,10 @@ python -m pip install pybiomart
 
 Find the slides live at:
 
-[wflynny.github.io/JAX-Sleep-AD-2020/](https://wflynny.github.io/JAX-Sleep-AD-2020)
+[wflynny.github.io/JAX-Sleep-2023/](https://wflynny.github.io/JAX-Sleep-2023)
 
 or locally by opening `slides.html` or `index.slides.html`.
 
-If you want to print the slides, you can visit [this page](https://wflynny.github.io/JAX-Sleep-AD-2020/?print-pdf)
+If you want to print the slides, you can visit [this page](https://wflynny.github.io/JAX-Sleep-2023/?print-pdf)
 
 
